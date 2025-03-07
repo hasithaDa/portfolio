@@ -1801,6 +1801,19 @@ textarea.form-input::-webkit-resizer {
     width: max-content;
     margin-left: auto;
   }
+
+  /* .tag {
+    display: inline-block;
+    background-color: #616264;
+    color: #fff;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 5px;
+    align-content: center;
+  } */
 }
 
 /**
