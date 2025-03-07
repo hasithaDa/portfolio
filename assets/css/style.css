@@ -904,6 +904,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Skill Box */
