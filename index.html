@@ -1341,7 +1341,7 @@
             <h3 class="h3 form-title">Contact Form</h3>
 
             <form
-              action="https://formsubmit.co/003d37a3d3afddfac669b970f4ef60a5"
+              action="https://formsubmit.co/hamdhasitha@gmail.com"
               method="POST"
               class="form"
               data-form
@@ -1381,7 +1381,7 @@
                 data-form-input
               ></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit" data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
@@ -1398,6 +1398,39 @@
                 ✅ Your message has been sent successfully!
               </div>
             </form>
+            <script>
+              document
+                .querySelector(".form")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+                  const form = event.target;
+                  const formData = new FormData(form);
+                  fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                      Accept: "application/json",
+                    },
+                  })
+                    .then((response) => {
+                      if (response.ok) {
+                        document.getElementById(
+                          "success-message"
+                        ).style.display = "block";
+                        form.reset();
+                      } else {
+                        alert(
+                          "There was an error sending your message. Please try again."
+                        );
+                      }
+                    })
+                    .catch((error) => {
+                      alert(
+                        "There was an error sending your message. Please try again."
+                      );
+                    });
+                });
+            </script>
           </section>
         </article>
       </div>
