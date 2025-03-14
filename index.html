@@ -919,25 +919,51 @@
           <!-- Add this section below the testimonials section -->
           <section class="qr-code">
             <h3 class="h3">CV Download</h3>
-            <div class="qr-code-container">
+            <div class="qr-code-container" style="margin-top: 20px">
               <div
                 style="
                   display: flex;
+                  flex-direction: row;
                   align-items: center;
-                  gap: 10px;
-                  margin-top: 20px;
+                  justify-content: center;
+                  gap: 20px;
+                  flex-wrap: wrap;
+                  text-align: center;
                 "
               >
+                <!-- QR Code -->
                 <img
                   src="./assets/images/Resume.png"
                   alt="QR Code"
-                  style="width: 150px; height: 150px"
+                  style="width: 150px; height: 150px; flex-shrink: 0"
                 />
-                <p class="timeline-text">
-                  Scan this QR code to visit our website and explore more
-                  details.loremScan this QR code to quickly access our website,
-                  explore our services, and stay updated with the latest offers.
-                </p>
+
+                <!-- Text and Download button -->
+                <div style="max-width: 400px">
+                  <p class="timeline-text" style="margin-bottom: 10px">
+                    You can refer to more information about me by scanning this
+                    QR code and clicking the download button. Using these, you
+                    can access my CV.
+                  </p>
+                  <a
+                    href="./assets/images/Resume-Hasitha-Darshana.pdf"
+                    download
+                    class="btn btn-primary"
+                    style="
+                      display: inline-block;
+                      padding: 10px 15px;
+                      background-color: #007bff;
+                      color: #fff;
+                      text-decoration: none;
+                      border-radius: 5px;
+                      transition: background-color 0.3s ease;
+                    "
+                    onmouseover="this.style.backgroundColor='#0056b3'"
+                    onmouseout="this.style.backgroundColor='#007bff'"
+                  >
+                    Download CV
+                  </a>
+                </div>
               </div>
             </div>
           </section>
@@ -1014,7 +1040,7 @@
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
+                      src="./assets/images/project-7.jpg"
                       alt="finance"
                       loading="lazy"
                     />
